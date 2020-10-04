@@ -1,5 +1,5 @@
-#Vue calcualtor
-###Simple project just for fun and improving skills
+# Vue calcualtor
+### Simple project just for fun and improving skills
 1. Was created four simple operations:
     - Addittion
     - Subtraction
