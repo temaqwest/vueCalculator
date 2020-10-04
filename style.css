@@ -1,0 +1,59 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 200px;
+    margin: 50px auto;
+    font-family: Roboto;
+}
+
+#app {
+    width: 200px;
+    box-shadow: 0 3px 5px #2f2f2f5b;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cell {
+    flex: 33%;
+    border: none;
+    height: 50px;
+    font-size: 18px;
+    transition: 0.3s all;
+}
+
+.cell:hover {
+    background-color: #2f2f2fa8;
+}
+
+input[type="text"] {
+    width: 200px;
+    border: 0;
+    color: #166088;
+    font-size: 18px;
+    padding: 5px 15px;
+    text-align: right;
+    background: #DBE9EE;
+}
+
+.num {
+    outline: none;
+    background: #166088;
+    color: #DBE9EE;
+}
+
+.ops {
+    outline: none;
+    background: #cf8d5e;
+    color: #DBE9EE;
+}

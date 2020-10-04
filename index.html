@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VueCalculator</title>
+</head>
+<body>
+    <div id="app">
+        <div class="grid">
+            <input type="text" v-model="result" placeholder="0">
+            <button v-on:click="input(num)" class="cell num" v-for="num in numbers">{{ num }}</button>
+            <button v-on:click="input(ops)" class="cell ops" v-for="ops in operations">{{ ops }}</button>
+            <button v-on:click="reset()" class="cell ops">R</button>
+            <button v-on:click="calculate()" class="cell ops">Go</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
