@@ -7,6 +7,7 @@ var vue = new Vue ({
     }, 
     methods: {
         input: function(char) {
+            this.result.toString();
             this.result += char;
         }, 
         reset: function() {
